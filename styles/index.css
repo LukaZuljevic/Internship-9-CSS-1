@@ -19,3 +19,13 @@
   font-family: "Times New Roman";
   src: url(../assets/fonts/Times-New-Roman.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "Graphik";
+  src: url(../assets/fonts/GraphikBlack.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Graphik-Web";
+  src: url(../assets/fonts/GraphikSemibold.otf) format("truetype");
+}

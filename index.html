@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="/styles/index.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
     />
 
     <title>The New Yorker</title>
@@ -14,7 +16,7 @@
   <body>
     <header>
       <nav class="nav-bar">
-        <div class="nav-bar__hamburger-menu"></div>
+        <i class="nav-bar__hamburger-menu fas fa-bars" style="color: gray"></i>
 
         <div class="nav-bar__logo">
           <svg
@@ -45,31 +47,90 @@
         </div>
 
         <ul class="nav-bar__menu">
-          <li class="nav-bar__menu-item"><a href="#">Newsletter</a></li>
-          <li class="nav-bar__menu-item"><a href="#">Sign in</a></li>
-          <li class="nav-bar__menu-item--blue">
-            <a href="#">Subscribe</a>
+          <li class="nav-bar__menu-item">
+            <a href="https://www.newyorker.com/newsletters?sourceCode=navbar"
+              >Newsletter</a
+            >
           </li>
-          <li class="fa fa-search nav-bar__menu-item--magnifying-glass"><a href="#"></a></li>
+          <li class="nav-bar__menu-item">
+            <a
+              href="https://id.condenast.com/interaction/ZDNoEHdfpueHHR5ILjBHL/email?xid=03781649-8856-4994-8c34-29f3ecbef9c0&scope=openid%20offline_access&state=%7B%22redirectURL%22%3A%22%2Fnewsletters%22%7D&prompt=select_account%20consent&source=VERSO_NAVIGATION&client_id=condenast.identity.551db804934e94baa14c434240328bf2&redirect_uri=https%3A%2F%2Fwww.newyorker.com%2Fauth%2Fcomplete&response_type=code"
+              >Sign in</a
+            >
+          </li>
+          <li class=".nav-bar__menu-item nav-bar__menu-item--blue">
+            <a
+              href="https://www.newyorker.com/v2/offers/tny338?source=Site_0_JNY_NYR_DESKTOP_GLOBAL_NAV_CTA_0_INTL_PV0_TEST_JAN24_S_ZZ_PANELB&cds_mag_code=NYR&cds_page_id=280146&cds_response_key=94VGAANA1&redirectURL=https%3A%2F%2Fwww.newyorker.com%2F"
+              >Subscribe</a
+            >
+          </li>
+          <li class="nav-bar__menu-item--magnifying-glass">
+            <a
+              class="fas fa-search"
+              href="https://www.newyorker.com/search"
+            ></a>
+          </li>
         </ul>
       </nav>
 
-      <div class="header-content">
-        <img
-          src="./assets/images/header-image.webp"
-          alt="Header Image"
-          class="header-content__img"
-        />
-        <div class="header-content__text">
-          <h3>ON A MISSION FROM GOD</h3>
-          <p>
-            Across the country, billions of taxpayer dollars now subsidize
-            private religious education. A trove of mostly unpublished
-            correspondence reveals the origin of this effort to erode the
-            separation of church and state. <strong>Alec MacGillis</strong>
-            reports.
-          </p>
+      <a
+        href="https://www.newyorker.com/magazine/2025/01/20/religious-education-public-schools-vouchers-taxes-catholic-church-ohio"
+        class="header-content-link"
+      >
+        <div class="header-content">
+          <div class="header-content__img">
+            <img src="./assets/images/header-image.webp" alt="Header Image" />
+          </div>
+
+          <div class="header-content__text">
+            <h3>ON A MISSION FROM GOD</h3>
+            <p>
+              Across the country, billions of taxpayer dollars now subsidize
+              private religious education. A trove of mostly unpublished
+              correspondence reveals the origin of this effort to erode the
+              separation of church and state. <strong>Alec MacGillis</strong>
+              reports.
+            </p>
+            <button class="header-content__text-button">
+              <i class="fas fa-headphones"></i>
+              <p>Listen</p>
+            </button>
+          </div>
         </div>
+      </a>
+
+      <div class="header-bottom-submenu">
+        <ul class="header-bottom-submenu__menu">
+          <li>
+            <a href="#">The Latest</a>
+          </li>
+          <li><a href="#">News</a></li>
+          <li>
+            <a href="#">Books & Culture</a>
+          </li>
+          <li>
+            <a href="#">Fiction & Poetry</a>
+          </li>
+          <li>
+            <a href="#">Humor & Cartoons</a>
+          </li>
+          <li>
+            <a href="#">Magazine</a>
+          </li>
+          <li>
+            <a href="#">Puzzle & Games</a>
+          </li>
+          <li>
+            <a href="#">Video</a>
+          </li>
+          <li>
+            <a href="#">Podcasts</a>
+          </li>
+          <li>
+            <a href="#">Goings On</a>
+          </li>
+          <li><a href="#">Shop</a></li>
+        </ul>
       </div>
     </header>
 
