@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 56px;
+  margin-bottom: 4rem;
 }
 
 .mini-games-section__info {
@@ -30,7 +30,9 @@
 .mini-games-section__game-cards {
   display: flex;
   gap: 2rem;
-  padding: 0px 1rem;
+  margin: 0px 3rem;
+  width: 100%;
+  justify-content: center;
 }
 
 .mini-games-section__game-card-link-wrapper {
@@ -44,9 +46,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem;
-  flex: 1 1 18rem;
-  min-height: 24rem;
-  max-width: 17rem;
+  min-height: 28rem;
+  max-width: 20vw;
   border-radius: 1rem;
 }
 
@@ -189,4 +190,58 @@
     left: 1rem;
     text-align: left;
   }
+}
+
+/* -------------------------------------------------------------- */
+
+.the-weekend-essay-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../assets/images/Essay-Section-Background.gif) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 3rem;
+  min-height: 550px;
+  justify-content: flex-end;
+  margin-bottom: 4rem;
+}
+
+.the-weekend-essay-link {
+  text-decoration: none;
+  color: white;
+}
+
+.the-weekend-essay-section__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  max-width: 31rem;
+}
+
+.the-weekend-essay-section__info h6 {
+  font-family: "Irvin-Heading", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.the-weekend-essay-section__big-paragraph {
+  margin-top: 1rem;
+  font-family: "TNY-Adobe-Caslon-Pro-Regular", "Times New Roman", Times, serif;
+  font-size: 21px;
+}
+
+.the-weekend-essay-section__description {
+  margin-top: 1rem;
+  text-align: center;
+  font-family: "TNY-Adobe-Caslon-Pro-Regular", "Times New Roman", Times, serif;
+  font-size: 17px;
+  color: rgb(245, 245, 245);
+}
+
+.the-weekend-essay-section__author {
+  font-family: "NeutraFace", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: rgb(229, 229, 229);
 }

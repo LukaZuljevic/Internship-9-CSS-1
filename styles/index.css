@@ -31,3 +31,8 @@
   font-family: "Graphik-Web";
   src: url(../assets/fonts/GraphikSemibold.otf) format("truetype");
 }
+
+@font-face {
+  font-family: "NeutraFace";
+  src: url(../assets/fonts/NeutraFace.otf) format("truetype");
+}
