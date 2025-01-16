@@ -1,5 +1,6 @@
 @import "../styles/header.css";
 @import "../styles/main.css";
+@import "../styles/footer.css";
 
 @font-face {
   font-family: "Irvin-Heading";
@@ -23,7 +24,7 @@
 
 @font-face {
   font-family: "Graphik";
-  src: url(../assets/fonts/GraphikBlack.otf) format("truetype");
+  src: url(../assets/fonts/Graphik-Semibold.ttf) format("truetype");
 }
 
 @font-face {
