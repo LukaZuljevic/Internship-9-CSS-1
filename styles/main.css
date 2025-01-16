@@ -1,0 +1,192 @@
+.mini-games-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.mini-games-section__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 16px 0px 48px;
+}
+
+.mini-games-section__info h4 {
+  font-family: "Irvin-Heading", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.mini-games-section__info p {
+  font-size: 21px;
+  font-family: "TNY-Adobe-Caslon-Pro-Regular", "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+
+.mini-games-section__game-cards {
+  display: flex;
+  gap: 2rem;
+  padding: 0px 1rem;
+}
+
+.mini-games-section__game-card-link-wrapper {
+  text-decoration: none;
+  color: black;
+}
+
+.mini-games-section__game-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  flex: 1 1 18rem;
+  min-height: 24rem;
+  max-width: 17rem;
+  border-radius: 1rem;
+}
+
+.mini-games-section__game-card h4 {
+  font-family: "Irvin-heading", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.mini-games-section__game-card h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mini-games-section__game-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mini-games-section__game-card p {
+  font-size: 17px;
+  font-family: "TNY-Adobe-Caslon-Pro-Regular", "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+  width: 80%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.mini-games-section__game-card img {
+  width: 100%;
+  max-width: 12vw;
+  height: auto;
+  margin-bottom: 16px;
+  position: relative;
+  object-fit: contain;
+  margin-top: auto;
+}
+
+.mini-games-section__game-card-link {
+  text-align: center;
+}
+
+.mini-games-section__game-card-link span {
+  font-family: Graphik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.mini-games-section__game-card-link-wrapper:hover
+  .mini-games-section__game-card-link
+  span {
+  text-decoration: underline;
+}
+
+.mini-games-section__game-card-link-wrapper:hover {
+  cursor: pointer;
+}
+
+.mini-games-section__game-card i {
+  font-size: 8px;
+}
+
+.mini-games-section__game-card--crossword {
+  background-color: rgb(132, 201, 255);
+}
+
+.mini-games-section__game-card--the-mini {
+  background-color: rgb(165, 232, 253);
+}
+
+.mini-games-section__game-card--name-drop {
+  background-color: rgb(255, 239, 185);
+}
+
+.mini-games-section__game-card--cartoon-caption {
+  background-color: rgb(246, 246, 246);
+}
+
+@media only screen and (max-width: 760px) {
+  .mini-games-section__game-cards {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .mini-games-section__info {
+    padding: 16px 0px 32px;
+    gap: 0.5rem;
+  }
+
+  .mini-games-section__info h4 {
+    font-size: 22px;
+  }
+
+  .mini-games-section__info p {
+    font-size: 18px;
+  }
+
+  .mini-games-section__game-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 1.5rem;
+    max-width: none;
+    min-height: 2rem;
+    position: relative;
+  }
+
+  .mini-games-section__game-card-info {
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .mini-games-section__game-card p {
+    text-align: left;
+    font-size: 17px;
+  }
+
+  .mini-games-section__game-card h4 {
+    font-size: 18px;
+  }
+
+  .mini-games-section__game-card p {
+    width: 100%;
+  }
+
+  .mini-games-section__game-card img {
+    max-width: 15%;
+  }
+
+  .mini-games-section__game-card-link {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    text-align: left;
+  }
+}

@@ -14,6 +14,7 @@ header {
   flex-direction: column;
   background-color: black;
   color: white;
+  padding-top: 84px;
 }
 
 .nav-bar {
@@ -26,6 +27,7 @@ header {
   top: 0;
   width: 100%;
   background-color: black;
+  z-index: 100;
 }
 
 .nav-bar__logo {
@@ -34,6 +36,41 @@ header {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.nav-bar__menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  font-size: 12px;
+  gap: 1rem;
+  padding-right: 1rem;
+}
+
+.nav-bar__menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-bar__menu-item {
+  font-family: "Graphik", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.nav-bar__menu-item:hover {
+  text-decoration: underline;
+}
+
+.nav-bar__menu-item--blue {
+  background: #0787ca;
+  padding: 8px 28px;
+  border-radius: 2px;
+}
+
+.nav-bar__menu-item--magnifying-glass {
+  margin: 0px 1.5rem 0px 1rem;
+}
+
 .header-content-link {
   display: block;
   text-decoration: none;
@@ -137,39 +174,6 @@ header {
   .nav-bar__hamburger-menu.fas {
     display: none;
   }
-  .nav-bar__menu {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    align-items: center;
-    font-size: 12px;
-    gap: 1rem;
-    padding-right: 1rem;
-  }
-
-  .nav-bar__menu a {
-    color: white;
-    text-decoration: none;
-  }
-
-  .nav-bar__menu-item {
-    font-family: "Graphik", Helvetica, Arial, sans-serif;
-    font-weight: 600;
-  }
-
-  .nav-bar__menu-item:hover {
-    text-decoration: underline;
-  }
-
-  .nav-bar__menu-item--blue {
-    background: #0787ca;
-    padding: 8px 28px;
-    border-radius: 2px;
-  }
-
-  .nav-bar__menu-item--magnifying-glass {
-    margin: 0px 1.5rem 0px 1rem;
-  }
 
   .header-content {
     max-height: 95vh;
@@ -208,12 +212,16 @@ header {
 
 @media only screen and (max-width: 760px) {
   .nav-bar__hamburger-menu {
-    margin: 8px;
+    margin: 0 24px;
     cursor: pointer;
   }
 
   .nav-bar__menu {
     display: none;
+  }
+
+  .nav-bar__logo {
+    position: absolute;
   }
 
   .header-content {

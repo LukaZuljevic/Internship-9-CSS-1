@@ -1,4 +1,5 @@
 @import "../styles/header.css";
+@import "../styles/main.css";
 
 @font-face {
   font-family: "Irvin-Heading";
@@ -12,7 +13,7 @@
 
 @font-face {
   font-family: "TNY-Adobe-Caslon-Pro-Regular";
-  src: url(../assets/fonts/TNY-Adobe-Caslon-Pro-Regular.ttf) format("truetype");
+  src: url(../assets/fonts/ACaslonPro-Regular.otf) format("truetype");
 }
 
 @font-face {
