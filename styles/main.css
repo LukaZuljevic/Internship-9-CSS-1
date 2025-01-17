@@ -1,3 +1,13 @@
+main {
+  margin: 0 3.5rem;
+}
+
+@media only screen and (max-width: 760px) {
+  main {
+    margin: 0;
+  }
+}
+
 .mini-games-section {
   display: flex;
   flex-direction: column;
@@ -30,7 +40,6 @@
 .mini-games-section__game-cards {
   display: flex;
   gap: 2rem;
-  margin: 0px 3rem;
   width: 100%;
   justify-content: center;
 }
@@ -132,6 +141,10 @@
 }
 
 @media only screen and (max-width: 760px) {
+  .mini-games-section {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
   .mini-games-section__game-cards {
     flex-direction: column;
     width: 100%;
@@ -156,7 +169,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    margin: 0 1.5rem;
     max-width: none;
     min-height: 2rem;
     position: relative;
@@ -201,13 +213,12 @@
   background: url(../assets/images/Essay-Section-Background.gif) no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 0 3rem;
-  min-height: 550px;
+  height: 550px;
   justify-content: flex-end;
   margin-bottom: 4rem;
 }
 
-.the-weekend-essay-link {
+.the-weekend-essay-section__link-wrapper {
   text-decoration: none;
   color: white;
 }
@@ -244,4 +255,266 @@
   font-family: "NeutraFace", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: rgb(229, 229, 229);
+}
+
+/* ------------------------------------------------- */
+
+.fiction-section {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 600px;
+  margin-bottom: 4rem;
+  padding: 3rem;
+  background-color: rgb(246, 244, 239);
+}
+
+.fiction-section__illustration-link-wrapper {
+  text-decoration: none;
+  color: black;
+  width: 50%;
+}
+
+.fiction-section__illustration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.fiction-section__illustration-info {
+  text-align: center;
+}
+
+.fiction-section__illustration-info h6 {
+  font-family: "Irvin-Heading", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.fiction-section__illustration-info-title {
+  font-family: "Irvin-Heading", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+}
+
+.fiction-section__illustration-img {
+  text-align: center;
+}
+
+.fiction-section__illustration-img img {
+  object-fit: cover;
+  max-width: 50%;
+  max-height: 70vh;
+}
+
+.fiction-section__illustration-author {
+  text-align: center;
+}
+
+.fiction-section__illustration-author p:first-child {
+  font-family: "Irvin-Heading", Georgia, "Times New Roman", Times, serif;
+  margin-top: 1.5rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.fiction-section__illustration-author p:last-child {
+  font-family: "Graphik-Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 0.5rem;
+  font-size: 13px;
+  color: rgb(102, 102, 102);
+  font-weight: 400;
+}
+
+.fiction-section__fiction-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "TNY-Adobe-Caslon-Pro-Regular", "Times New Roman", Times, serif;
+  font-size: 19px;
+  line-height: 1.5em;
+}
+
+.fiction-section__fiction-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.fiction-section__fiction-info-text p:first-child::first-letter {
+  font-family: "TNY-Adobe-Caslon-Pro-Regular", "Times New Roman", Times, serif;
+  line-height: 1em;
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: -1rem;
+  float: left;
+  padding: 9px 4px 0px 0px;
+}
+
+.fiction-section__fiction-info-author {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.fiction-section__fiction-info-author > * {
+  border-top: 1px solid rgb(229, 229, 229);
+  width: 50%;
+}
+
+.fiction-section__fiction-info-author h6 {
+  padding-top: 1rem;
+  font-family: "Irvin-Heading", Georgia, "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.fiction-section__fiction-info-author-content {
+  display: flex;
+  gap: 1rem;
+}
+
+.fiction-section__fiction-info-author-content p {
+  font-family: "TNY-Adobe-Caslon-Pro-Regular", "Times New Roman", Times, serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.3em;
+}
+
+.fiction-section__fiction-info-author-content img {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.fiction-section__fiction-info-author-left a {
+  font-family: "Graphik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+.fiction-section__fiction-info-author-left a:hover {
+  cursor: pointer;
+}
+
+.fiction-section__fiction-info-author-left i {
+  font-size: 10px;
+}
+
+.fiction-section__fiction-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fiction-section__fiction-link:hover {
+  text-decoration: underline;
+}
+
+.fiction-section__fiction-info-text__link {
+  color: rgb(8, 121, 191);
+  font-family: "TNY-Adobe-Caslon-Pro-Regular", "Times New Roman", Times, serif;
+  font-size: 21px;
+  text-decoration: none;
+}
+
+.fiction-section__fiction-info-text__link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fiction-section__fiction-info-text__link i {
+  font-size: 13px;
+}
+
+@media only screen and (min-width: 761px) and (max-width: 1024px) {
+  .fiction-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fiction-section__illustration {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .fiction-section__illustration-info-title {
+    font-size: 28px;
+  }
+
+  .fiction-section__illustration-img img {
+    max-width: 80%;
+    max-height: 80vh;
+  }
+
+  .fiction-section__fiction-info {
+    width: 100%;
+  }
+
+  .fiction-section__fiction-info-author {
+    width: 100%;
+  }
+
+  .fiction-section__fiction-info-author-content {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .fiction-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fiction-section__illustration {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .fiction-section__illustration-info-title {
+    font-size: 28px;
+  }
+  .fiction-section__illustration-img {
+    min-width: 35rem;
+  }
+
+  .fiction-section__illustration-img img {
+    max-width: 100%;
+    max-height: 100vh;
+  }
+
+  .fiction-section__fiction-info {
+    width: 100%;
+  }
+
+  .fiction-section__fiction-info-text__link {
+    display: block;
+    text-align: center;
+    margin: 1.5rem;
+  }
+
+  .fiction-section__fiction-info-author {
+    width: 100%;
+  }
+
+  .fiction-section__fiction-info-author-content {
+    justify-content: space-between;
+  }
+
+  .fiction-section__fiction-info-author {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fiction-section__fiction-info-author > * {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .fiction-section__fiction-info {
+    padding-right: 9vw;
+  }
 }
