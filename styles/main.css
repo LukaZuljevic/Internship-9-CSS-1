@@ -8,11 +8,19 @@ main {
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  main {
+    margin: 0 10rem;
+  }
+}
+
 .mini-games-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 4rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid rgb(229, 229, 229);
 }
 
 .mini-games-section__info {
@@ -215,7 +223,7 @@ main {
   background-position: center;
   height: 550px;
   justify-content: flex-end;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
 }
 
 .the-weekend-essay-section__link-wrapper {

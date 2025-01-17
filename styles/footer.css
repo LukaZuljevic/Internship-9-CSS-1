@@ -23,7 +23,7 @@ footer a:hover {
 
 .footer-sections-and-more {
   display: flex;
-  padding: 32px 0;
+  padding: 32px 32px;
   border-bottom: 1px solid rgb(162, 162, 162, 0.3);
 }
 
@@ -33,6 +33,10 @@ footer a:hover {
   margin-bottom: 0.5rem;
   color: white;
   font-weight: 300;
+}
+
+.footer-sections-and-more ul {
+  padding: 0;
 }
 
 .footer-sections-and-more ul li {
