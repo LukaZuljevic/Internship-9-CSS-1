@@ -150,6 +150,10 @@ footer a:hover {
     padding-bottom: 0;
   }
 
+  .footer-info-and-policy ul {
+    padding-left: 0;
+  }
+
   .footer-info-and-policy ul li {
     width: 50%;
     margin-bottom: 2rem;
